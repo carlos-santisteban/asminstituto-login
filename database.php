@@ -1,9 +1,16 @@
 <?php
 
-$server = 'sql106.epizy.com';
+/*$server = 'sql106.epizy.com';
 $username = 'epiz_30496733';
 $password = 'gJyd5sIbFjOFT';
 $database = 'epiz_30496733_login_database';
+*/
+
+
+$server = 'localhost';
+$username = 'root';
+$password = '';
+$database = 'login_database';
 
 try {
   $conn = new PDO("mysql:host=$server;dbname=$database;", $username, $password);
