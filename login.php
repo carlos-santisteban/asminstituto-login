@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="style-2.css">
   </head>
   <body>
+    <!--aqui llamamos al header, recuerda que el header es quien contiene a nuestro menu de navegacion-->
     <?php require 'partials/header.php' ?>
 
     <?php if(!empty($message)): ?>
@@ -44,8 +45,8 @@
     <span>o <a href="signup.php">Regístrate</a></span>
 
     <form action="login.php" method="POST">
-      <input name="email" type="text" placeholder="Ingresa tu email">
-      <input name="password" type="password" placeholder="Ingresa tu contraseña">
+      <input name="email" type="text" placeholder="Ingresa tu email" required>
+      <input name="password" type="password" placeholder="Ingresa tu contraseña" required>
       <input type="submit" value="Ingresar">
     </form>
   </body>
